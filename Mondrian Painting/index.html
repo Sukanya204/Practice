@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container{
+      height: 748px;
+      width: 748px;
+      background: #000;
+      display:grid;
+      gap: 9px;
+      grid-template-rows: 414px 130px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+    }
+
+    .item{
+      background: #F0F1EC;
+    }
+
+    .st{
+      background: #E72F24;
+    }
+
+    .sf{
+      grid-area: 1 / 2 / 2 / 5;
+    }
+
+    .sg{
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+
+    .sb{
+      grid-area: 2 / 2 / 4 / 4;
+    }
+
+    .sz{
+      background: #004592;
+      border-bottom: 10px solid black;
+    }
+
+    .sd{
+      grid-area: 3/4/5/5;
+    }
+
+    .su{
+      background: #F9D01E;
+    }
+
+    .sv{
+      background: #232629;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+</body>
+  <div class="container">
+    <div class="item st"></div>
+    <div class="item sf"></div>
+    <div class="item sg"></div>
+    <div class="item sb"></div>
+    <div class="item sz"></div>
+    <div class="item sd"></div>
+    <div class="item sk"></div>
+    <div class="item su"></div>
+    <div class="item sv"></div>
+  </div>
+
+</html>
